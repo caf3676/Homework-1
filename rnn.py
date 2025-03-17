@@ -83,7 +83,7 @@ if __name__ == "__main__":
     print("========== Vectorizing data ==========")
     model = RNN(50, args.hidden_dim)  # Fill in parameters
     # optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    optimizer = optim.Adam(model.parameters(), lr=0.01)
     word_embedding = pickle.load(open('C:\\Users\\carlo\\OneDrive\\UTD\\Spring 2025\\ML\\cs6375_2025_assignment1_release\\cs6375_2025_assignment1_release\\Data_Embedding\\word_embedding.pkl', 'rb'))
 
     stopping_condition = False
